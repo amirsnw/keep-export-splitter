@@ -65,9 +65,10 @@ fn move_html_file(html_path: &Path, target_folder: &Path) -> Result<()> {
 
 fn main() -> Result<()> {
     let args: Vec<String> = env::args().collect();
-    if args.len() != 4 {
-        eprintln!("Usage: {} <html_dir> <image_source_dir> <target_dir>", args[0]);
-        std::process::exit(1);
+    if args.len() == 1 || args.contains(&"--help".to_string()) {
+        println!("Usage:\n  {} <html_dir> <image_source_dir> <output_dir>", args[0]);
+        println!("\nExample:\n  {} \"C:\\Users\\you\\Takeout\\Keep\" \"C:\\Users\\you\\images\" \"C:\\Users\\you\\output\"", args[0]);
+        return Ok(());
     }
 
     let html_dir = Path::new(&args[1]);
