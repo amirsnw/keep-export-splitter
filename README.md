@@ -1,5 +1,5 @@
 # Keep Export Splitter
-A Rust-based utility to help you batch and prepare Google Keep exports for import into Notion — with each batch capped at 25 MB to meet Notion’s import size limit.
+A Rust-based utility to help you batch and prepare Google Keep exports for import into Notion — with each batch capped at 25 MB to meet Notion's import size limit.
 
 ## ✨ What it does
 
@@ -10,8 +10,20 @@ A Rust-based utility to help you batch and prepare Google Keep exports for impor
    - Copy the corresponding image files next to their HTML.
    - Organize them into folders, each up to 25MB in size.
    - So you can zip each batch and import into Notion without exceeding limits.
+  
+## 🚀 Quick Start (No Rust Needed)
 
-## 🚀 Getting Started
+Download the precompiled executable:
+
+👉 [Download keep-export-splitter.exe](releases/keep-export-splitter.exe)
+
+Then run it via command line:
+
+```bash
+keep-export-splitter.exe "C:\Path\To\Extracted\Keep" "C:\Path\To\Extracted\Keep" "C:\Output\Target\Path"
+```
+
+## 🚀 Getting Started (Using Rust)
 
 To get started with the Keep Export Splitter, follow these steps:
 
@@ -32,23 +44,12 @@ To get started with the Keep Export Splitter, follow these steps:
    cargo build --release
    ```
 
-5. **Run the Tool**: Execute the tool with the required arguments:
+5. **Run with cargo**: Execute the tool with the required arguments:
    ```bash
    cargo run -- "C:\Path\To\Extracted\Keep" "C:\Path\To\Images" "C:\Path\To\Output"
    ```
 
-## 🧪 Usage:
-```bash
-  target\debug\keep-export-splitter.exe <html_dir> <image_source_dir> <output_dir>
-```
-
-#### Example
-
-```bash
-cargo run -- "C:\Path\To\Extracted\Keep" "C:\Path\To\Extracted\Keep" "C:\Path\To\Output"
-```
-
-## Output
+#### Output
 After running, your output folder will look like this:
    ```bash
       C:\Path\To\Output\
@@ -63,3 +64,4 @@ After running, your output folder will look like this:
 
 ## 📦 Requirements
 - Google Keep Takeout .zip file (already extracted)
+
