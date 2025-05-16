@@ -15,7 +15,8 @@ A Rust-based utility to help you batch and prepare Google Keep exports for impor
 
 Download the precompiled executable:
 
-👉 [Download keep-export-splitter.exe](releases/keep-export-splitter.exe)
+
+👉 [Download keep-export-splitter.exe](https://github.com/amirsnw/keep-export-splitter/raw/refs/heads/main/releases/keep-export-splitter.exe)
 
 Then run it via command line:
 
