@@ -1,0 +1,10 @@
+[package]
+name = "keep-export-splitter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+walkdir = "2.4.0"
+scraper = "0.18.1"
+regex = "1.10.4"
+anyhow = "1.0"
